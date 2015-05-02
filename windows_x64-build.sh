@@ -230,9 +230,9 @@ params_dump PARAMS
 
 
 echo "---- configure ----"
-./configure --logfile="./logconf.txt" --extra-cflags="-MT -IWindowsInclude -GS-" $PARAMS
+./configure --extra-cflags="-MT -IWindowsInclude -GS-" $PARAMS
 
-echo "---- make clean ----"
+echo "---- make clean ----"s
 make clean
 echo "---- make install ----"
 make install 2>&1 | tee build.log
