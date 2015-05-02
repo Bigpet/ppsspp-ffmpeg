@@ -230,7 +230,7 @@ params_dump PARAMS
 
 
 echo "---- configure ----"
-./configure --extra-cflags="-MT -IWindowsInclude -GS-" $PARAMS
+./configure --logfile="./logconf.txt" --extra-cflags="-MT -IWindowsInclude -GS-" $PARAMS
 
 echo "---- make clean ----"
 make clean
